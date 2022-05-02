@@ -1,0 +1,41 @@
+{
+  "name": "etmaplist",
+  "version": "0.1.0",
+  "description": "Enemy Territory information database for game maps.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "concurrently --kill-others \"nodemon server/index.js\" \"npm run serve --prefix ./client\"",
+    "frontend:dev": "npm run serve --prefix ./client"
+  },
+  "author": "valli & winner",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.940.0",
+    "bcryptjs": "2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "jszip": "^3.6.0",
+    "lodash": "^4.17.21",
+    "pg": "^8.6.0",
+    "pngjs": "^6.0.0",
+    "tga": "^1.0.4",
+    "yesql": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/eslint-parser": "^7.16.5",
+    "concurrently": "^6.3.0",
+    "eslint": "^8.0.1",
+    "eslint-plugin-vue": "^7.20.0",
+    "grunt": "^1.5.2",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-compress": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^5.2.1",
+    "grunt-run": "^0.8.1",
+    "nodemon": "^2.0.8"
+  }
+}
